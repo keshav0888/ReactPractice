@@ -4,6 +4,7 @@ const initialValues={
   loading:false
 }
 export default function submitForm(state=initialValues,action) {
+  console.log("action receive in reducers",action)
   switch(action.type){
     case type.SUBMIT_FORM:
       return{
